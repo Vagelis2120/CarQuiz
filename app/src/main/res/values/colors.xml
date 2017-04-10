@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#4DD0E1</color>
+    <color name="startbckgrnd">#E0E0E0</color>
+    <color name="quizBtn">#03A9F4</color>
+    <color name="deepBlue">#0288D1</color>
+    <color name="deepGreen">#388E3C</color>
+    <color name="deepRed">#D32F2F</color>
+    <color name="lightBlue">#BBDEFB</color>
+    <color name="normalBckgrnd">#90CAF9</color>
+    <color name="easyBckgrnd">#A5D6A7</color>
+    <color name="hardBckgrnd">#EF9A9A</color>
+</resources>

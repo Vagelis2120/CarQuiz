@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ChooseCarTxt">40sp</dimen>
+    <dimen name="EditNameMode">26sp</dimen>
+    <dimen name="EditNameModeLand">20sp</dimen>
+    <dimen name="ChooseCarMarginTop">16dp</dimen>
+    <dimen name="ChooseCarLandMarginTop">8dp</dimen>
+    <dimen name="LinearLayoutStartMarginTop">8dp</dimen>
+    <dimen name="GreenBlueCarPaddingRight">16dp</dimen>
+    <dimen name="Radio1StartMarginRight">60dp</dimen>
+    <dimen name="Radio2StartMarginRight">40dp</dimen>
+    <dimen name="Radio3StartMarginLeft">20dp</dimen>
+    <dimen name="NameEdtTextMarginBottom">70dp</dimen>
+    <dimen name="StartQuizBtnMarginBottom">8dp</dimen>
+    <dimen name="ModesPaddingTop">16dp</dimen>
+    <dimen name="QuizCarImgMarginTop">8dp</dimen>
+    <dimen name="QuestionsTextSize">16sp</dimen>
+    <dimen name="QuestionsMarginTop">32dp</dimen>
+    <dimen name="RadioGroupMarginTop">24dp</dimen>
+    <dimen name="RadioTextSize">16sp</dimen>
+    <dimen name="RadiosMarginRight">32dp</dimen>
+    <dimen name="StripeMarginTop">24dp</dimen>
+    <dimen name="FerrariImgMarginTop">24dp</dimen>
+    <dimen name="BrandEdtMarginTop">24dp</dimen>
+    <dimen name="CheckBoxesLinearMarginTop">16dp</dimen>
+    <dimen name="CheckBoxesnRadiosTextSize">16sp</dimen>
+    <dimen name="MidCheckBoxnRadioMarginTopnBottom">8dp</dimen>
+</resources>

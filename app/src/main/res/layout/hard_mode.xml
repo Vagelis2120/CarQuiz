@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RedScrollView">
+
+    <LinearLayout style="@style/QuizLinear">
+
+        <TextView
+            style="@style/HardMode"
+            android:text="@string/hardmode" />
+
+        <ImageView style="@style/QuizRedCarImg" />
+
+        <View style="@style/HardQuizStripe" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/howmanyseats" />
+
+        <RadioGroup
+            android:id="@+id/SeatsRadio"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/one"
+                style="@style/RedLeftRadio"
+                android:text="@string/one" />
+
+            <RadioButton
+                android:id="@+id/two"
+                style="@style/RedMidRadio"
+                android:text="@string/two" />
+
+            <RadioButton
+                android:id="@+id/four"
+                style="@style/RedRightRadio"
+                android:text="@string/four" />
+
+        </RadioGroup>
+
+        <View style="@style/RedStripe" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/carbrand" />
+
+        <ImageView style="@style/FerrariImg" />
+
+        <!-- Stop auto focussing the EditText -->
+        <View style="@style/FocusedView" />
+
+        <EditText
+            android:id="@+id/BrandEdtTxt"
+            style="@style/BrandEdtTxt" />
+
+        <View style="@style/RedStripe" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/volkswagen" />
+
+        <LinearLayout style="@style/CheckBoxesLinear">
+
+            <CheckBox
+                android:id="@+id/AudiCheckBox"
+                style="@style/RedCheckBoxes"
+                android:text="@string/audi" />
+
+            <CheckBox
+                android:id="@+id/FerrariCheckBox"
+                style="@style/RedMidCheckBox"
+                android:text="@string/ferrari" />
+
+            <CheckBox
+                android:id="@+id/PorscheCheckBox"
+                style="@style/RedCheckBoxes"
+                android:text="@string/porsche" />
+
+        </LinearLayout>
+
+        <View style="@style/RedStripe" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/fastestcar" />
+
+        <RadioGroup
+            android:id="@+id/VerticalRadio"
+            style="@style/VerticalRadioGroup">
+
+
+            <RadioButton
+                android:id="@+id/Bugatti"
+                style="@style/VerticalRedRadio"
+                android:text="@string/bugatti" />
+
+            <RadioButton
+                android:id="@+id/Venom"
+                style="@style/VerticalRedMidRadio"
+                android:text="@string/venom" />
+
+            <RadioButton
+                android:id="@+id/Aero"
+                style="@style/VerticalRedRadio"
+                android:text="@string/aero" />
+
+        </RadioGroup>
+
+        <View style="@style/RedStripe" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/italiancars" />
+
+        <LinearLayout style="@style/CheckBoxesLinear">
+
+            <CheckBox
+                android:id="@+id/Opel"
+                style="@style/RedCheckBoxes"
+                android:text="@string/opel" />
+
+            <CheckBox
+                android:id="@+id/Fiat"
+                style="@style/RedMidCheckBox"
+                android:text="@string/fiat" />
+
+            <CheckBox
+                android:id="@+id/AlfaRomeo"
+                style="@style/RedCheckBoxes"
+                android:text="@string/alfaromeo" />
+
+        </LinearLayout>
+
+        <View style="@style/RedStripe" />
+
+        <Button
+            android:id="@+id/FinishBtn"
+            style="@style/RedFinish"
+            android:onClick="finished"
+            android:text="@string/finish" />
+    </LinearLayout>
+</ScrollView>

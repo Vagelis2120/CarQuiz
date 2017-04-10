@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Car Quiz</string>
+    <string name="answered">απάντησε</string>
+    <string name="carbrand">2. Ποια μάρκα αυτοκινήτου χρησιμοποιεί αυτό το σήμα;</string>
+    <string name="choosecar">Διάλεξε αυτοκίνητο</string>
+    <string name="correct">Σωστό</string>
+    <string name="correctly">Σωστά !</string>
+    <string name="easymode">Εύκολο Επίπεδο</string>
+    <string name="fastestcar">4. Ποιο αυτοκίνητο είναι το πιο γρήγορο ;</string>
+    <string name="ferrariEdtTxt">Απάντησε Εδώ</string>
+    <string name="finish">Τέλος</string>
+    <string name="hardmode">Δύσκολο Επίπεδο</string>
+    <string name="howmanyseats">1. Πόσες θέσεις έχει συνήθως ένα αγωνιστικό αυτοκίνητο;</string>
+    <string name="italiancars">5. Ποιες απο τις παρακάτω μάρκες αυτοκινήτου είναι ιταλικές ;</string>
+    <string name="lost">Έχασες, καλή τύχη την επόμενη φορά !</string>
+    <string name="namehere">Όνομα Εδώ</string>
+    <string name="normalmode">Κανονικό Επίπεδο</string>
+    <string name="q1na">Δεν απάντησες την ερώτηση 1</string>
+    <string name="q2na">Δεν απάντησες την ερώτηση 2</string>
+    <string name="q3na">Δεν απάντησες την ερώτηση 3</string>
+    <string name="q4na">Δεν απάντησες την ερώτηση 4</string>
+    <string name="q5na">Δεν απάντησες την ερώτηση 5</string>
+    <string name="questions">Ερωτήσεις</string>
+    <string name="result">Αποτέλεσμα</string>
+    <string name="score">Σκορ</string>
+    <string name="selectcar">Παρακαλώ διάλεξε αυτοκίνητο !</string>
+    <string name="startquiz">Εκκίνηση</string>
+    <string name="user">Χρήστης</string>
+    <string name="volkswagen">3. Ποιες από τις παρακάτω μάρκες αυτοκινήτου, ανήκουν στην Volkswagen ;</string>
+    <string name="whatsyourname">Πως σε λένε ;</string>
+    <string name="won">Κέρδισες ! Συγχαρητήρια !</string>
+    <string name="wrong">Λάθος</string>
+</resources>

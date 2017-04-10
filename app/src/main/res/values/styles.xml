@@ -1,0 +1,530 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RelativeStartPage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/startbckgrnd</item>
+    </style>
+
+    <style name="ScrollViewStartPage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:isScrollContainer">false</item>
+    </style>
+
+    <style name="ChooseCar">
+        <item name="android:textSize">@dimen/ChooseCarTxt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/ChooseCarMarginTop</item>
+    </style>
+
+    <style name="ChooseCarLand">
+        <item name="android:textSize">@dimen/ChooseCarTxt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/ChooseCarLandMarginTop</item>
+    </style>
+
+    <style name="LinearLayoutStart">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/choosecar</item>
+        <item name="android:layout_marginTop">@dimen/LinearLayoutStartMarginTop</item>
+    </style>
+
+    <style name="LinearLayoutStartLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/choosecar</item>
+    </style>
+
+    <style name="RadioGroupStartPage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/linearlayout</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="BlueCar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/bluecar</item>
+        <item name="android:paddingRight">@dimen/GreenBlueCarPaddingRight</item>
+    </style>
+
+    <style name="GreenCar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/greencar</item>
+        <item name="android:paddingRight">@dimen/GreenBlueCarPaddingRight</item>
+    </style>
+
+    <style name="RedCar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/redcar</item>
+    </style>
+
+    <style name="RadioBtn1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/Radio1StartMarginRight</item>
+    </style>
+
+    <style name="RadioBtn2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/Radio2StartMarginRight</item>
+    </style>
+
+    <style name="RadioBtn3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/Radio3StartMarginLeft</item>
+    </style>
+
+    <style name="NameEditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/namehere</item>
+        <item name="android:textSize">@dimen/EditNameMode</item>
+        <item name="android:layout_above">@id/StartQuizBtn</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/NameEdtTextMarginBottom</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="NameEditTextLand">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/namehere</item>
+        <item name="android:textSize">@dimen/EditNameModeLand</item>
+        <item name="android:layout_above">@id/StartQuizBtn</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="WhatsYourName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/whatsyourname</item>
+        <item name="android:textSize">@dimen/EditNameMode</item>
+        <item name="android:layout_above">@id/name</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="StartQuizBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/startquiz</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">@dimen/StartQuizBtnMarginBottom</item>
+        <item name="android:background">@color/quizBtn</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:onClick">clickStart</item>
+    </style>
+
+    <style name="BlueScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/normalBckgrnd</item>
+    </style>
+
+    <style name="GreenScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/easyBckgrnd</item>
+    </style>
+
+    <style name="RedScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/hardBckgrnd</item>
+    </style>
+
+    <style name="NormalMode">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/EditNameMode</item>
+        <item name="android:textColor">@color/deepBlue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/ModesPaddingTop</item>
+    </style>
+
+    <style name="EasyMode">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/EditNameMode</item>
+        <item name="android:textColor">@color/deepGreen</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/ModesPaddingTop</item>
+    </style>
+
+    <style name="HardMode">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/EditNameMode</item>
+        <item name="android:textColor">@color/deepRed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/ModesPaddingTop</item>
+    </style>
+
+    <style name="QuizLinear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="QuizBlueCarImg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/QuizCarImgMarginTop</item>
+        <item name="android:src">@drawable/bluerace</item>
+    </style>
+
+    <style name="QuizGreenCarImg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/QuizCarImgMarginTop</item>
+        <item name="android:src">@drawable/greenrace</item>
+    </style>
+
+    <style name="QuizRedCarImg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/QuizCarImgMarginTop</item>
+        <item name="android:src">@drawable/redrace</item>
+    </style>
+
+    <style name="NormalQuizStripe">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:background">@color/deepBlue</item>
+    </style>
+
+    <style name="EasyQuizStripe">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:background">@color/deepGreen</item>
+    </style>
+
+    <style name="HardQuizStripe">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:background">@color/deepRed</item>
+    </style>
+
+    <style name="questions">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/QuestionsTextSize</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/QuestionsMarginTop</item>
+    </style>
+
+    <style name="RadioGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/RadioGroupMarginTop</item>
+    </style>
+
+    <style name="BlueLeftRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepBlue</item>
+        <item name="android:textSize">@dimen/RadioTextSize</item>
+        <item name="android:layout_marginRight">@dimen/RadiosMarginRight</item>
+    </style>
+
+    <style name="BlueMidRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepBlue</item>
+        <item name="android:textSize">@dimen/RadioTextSize</item>
+        <item name="android:layout_marginRight">@dimen/RadiosMarginRight</item>
+    </style>
+
+    <style name="BlueRightRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepBlue</item>
+        <item name="android:textSize">@dimen/RadioTextSize</item>
+    </style>
+
+    <style name="GreenLeftRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepGreen</item>
+        <item name="android:textSize">@dimen/RadioTextSize</item>
+        <item name="android:layout_marginRight">@dimen/RadiosMarginRight</item>
+    </style>
+
+    <style name="GreenMidRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepGreen</item>
+        <item name="android:textSize">@dimen/RadioTextSize</item>
+        <item name="android:layout_marginRight">@dimen/RadiosMarginRight</item>
+    </style>
+
+    <style name="GreenRightRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepGreen</item>
+        <item name="android:textSize">@dimen/RadioTextSize</item>
+    </style>
+
+    <style name="RedLeftRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepRed</item>
+        <item name="android:textSize">@dimen/RadioTextSize</item>
+        <item name="android:layout_marginRight">@dimen/RadiosMarginRight</item>
+    </style>
+
+    <style name="RedMidRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepRed</item>
+        <item name="android:textSize">@dimen/RadioTextSize</item>
+        <item name="android:layout_marginRight">@dimen/RadiosMarginRight</item>
+    </style>
+
+    <style name="RedRightRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepRed</item>
+        <item name="android:textSize">@dimen/RadioTextSize</item>
+    </style>
+
+    <style name="BlueStripe">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/deepBlue</item>
+        <item name="android:layout_marginTop">@dimen/StripeMarginTop</item>
+    </style>
+
+    <style name="GreenStripe">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/deepGreen</item>
+        <item name="android:layout_marginTop">@dimen/StripeMarginTop</item>
+    </style>
+
+    <style name="RedStripe">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/deepRed</item>
+        <item name="android:layout_marginTop">@dimen/StripeMarginTop</item>
+    </style>
+
+    <style name="FerrariImg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ferrari</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/FerrariImgMarginTop</item>
+    </style>
+
+    <style name="BrandEdtTxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/lightBlue</item>
+        <item name="android:hint">@string/ferrariEdtTxt</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:layout_marginTop">@dimen/BrandEdtMarginTop</item>
+    </style>
+
+    <style name="CheckBoxesLinear">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/CheckBoxesLinearMarginTop</item>
+    </style>
+
+    <style name="BlueCheckBoxes">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepBlue</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+    </style>
+
+    <style name="BlueMidCheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepBlue</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+        <item name="android:layout_marginTop">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+        <item name="android:layout_marginBottom">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+    </style>
+
+    <style name="GreenCheckBoxes">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepGreen</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+    </style>
+
+    <style name="GreenMidCheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepGreen</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+        <item name="android:layout_marginTop">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+        <item name="android:layout_marginBottom">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+    </style>
+
+    <style name="RedCheckBoxes">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepRed</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+    </style>
+
+    <style name="RedMidCheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepRed</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+        <item name="android:layout_marginTop">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+        <item name="android:layout_marginBottom">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+    </style>
+
+    <style name="VerticalRadioGroup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/RadioGroupMarginTop</item>
+    </style>
+
+    <style name="VerticalBlueRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepBlue</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+    </style>
+
+    <style name="VerticalBlueMidRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepBlue</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+        <item name="android:layout_marginTop">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+        <item name="android:layout_marginBottom">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+    </style>
+
+    <style name="BlueFinish">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/deepBlue</item>
+    </style>
+
+    <style name="VerticalGreenRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepGreen</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+    </style>
+
+    <style name="VerticalGreenMidRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepGreen</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+        <item name="android:layout_marginTop">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+        <item name="android:layout_marginBottom">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+    </style>
+
+    <style name="GreenFinish">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/deepGreen</item>
+    </style>
+
+    <style name="VerticalRedRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepRed</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+    </style>
+
+    <style name="VerticalRedMidRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:buttonTint">@color/deepRed</item>
+        <item name="android:textSize">@dimen/CheckBoxesnRadiosTextSize</item>
+        <item name="android:layout_marginTop">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+        <item name="android:layout_marginBottom">@dimen/MidCheckBoxnRadioMarginTopnBottom</item>
+    </style>
+
+    <style name="RedFinish">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/deepRed</item>
+    </style>
+
+    <style name="FocusedView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+</resources>

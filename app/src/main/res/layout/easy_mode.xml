@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GreenScrollView">
+
+    <LinearLayout style="@style/QuizLinear">
+
+        <TextView
+            style="@style/EasyMode"
+            android:text="@string/easymode" />
+
+        <ImageView style="@style/QuizGreenCarImg" />
+
+        <View style="@style/EasyQuizStripe" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/howmanyseats" />
+
+        <RadioGroup
+            android:id="@+id/SeatsRadio"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/one"
+                style="@style/GreenLeftRadio"
+                android:text="@string/one" />
+
+            <RadioButton
+                android:id="@+id/two"
+                style="@style/GreenMidRadio"
+                android:text="@string/two" />
+
+            <RadioButton
+                android:id="@+id/four"
+                style="@style/GreenRightRadio"
+                android:text="@string/four" />
+
+        </RadioGroup>
+
+        <View style="@style/GreenStripe" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/carbrand" />
+
+        <ImageView style="@style/FerrariImg" />
+
+        <!-- Stop auto focussing the EditText -->
+        <View style="@style/FocusedView" />
+
+        <EditText
+            android:id="@+id/BrandEdtTxt"
+            style="@style/BrandEdtTxt" />
+
+        <View style="@style/GreenStripe" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/volkswagen" />
+
+        <LinearLayout style="@style/CheckBoxesLinear">
+
+            <CheckBox
+                android:id="@+id/AudiCheckBox"
+                style="@style/GreenCheckBoxes"
+                android:text="@string/audi" />
+
+            <CheckBox
+                android:id="@+id/FerrariCheckBox"
+                style="@style/GreenMidCheckBox"
+                android:text="@string/ferrari" />
+
+            <CheckBox
+                android:id="@+id/PorscheCheckBox"
+                style="@style/GreenCheckBoxes"
+                android:text="@string/porsche" />
+
+        </LinearLayout>
+
+        <View style="@style/GreenStripe" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/fastestcar" />
+
+        <RadioGroup
+            android:id="@+id/VerticalRadio"
+            style="@style/VerticalRadioGroup">
+
+
+            <RadioButton
+                android:id="@+id/Bugatti"
+                style="@style/VerticalGreenRadio"
+                android:text="@string/bugatti" />
+
+            <RadioButton
+                android:id="@+id/Venom"
+                style="@style/VerticalGreenMidRadio"
+                android:text="@string/venom" />
+
+            <RadioButton
+                android:id="@+id/Aero"
+                style="@style/VerticalGreenRadio"
+                android:text="@string/aero" />
+
+        </RadioGroup>
+
+        <View style="@style/GreenStripe" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/italiancars" />
+
+        <LinearLayout style="@style/CheckBoxesLinear">
+
+            <CheckBox
+                android:id="@+id/Opel"
+                style="@style/GreenCheckBoxes"
+                android:text="@string/opel" />
+
+            <CheckBox
+                android:id="@+id/Fiat"
+                style="@style/GreenMidCheckBox"
+                android:text="@string/fiat" />
+
+            <CheckBox
+                android:id="@+id/AlfaRomeo"
+                style="@style/GreenCheckBoxes"
+                android:text="@string/alfaromeo" />
+
+        </LinearLayout>
+
+        <View style="@style/GreenStripe" />
+
+        <Button
+            android:id="@+id/FinishBtn"
+            style="@style/GreenFinish"
+            android:onClick="finished"
+            android:text="@string/finish" />
+    </LinearLayout>
+</ScrollView>
