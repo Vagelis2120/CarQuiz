@@ -208,7 +208,7 @@ public class HardMode extends AppCompatActivity {
         /*
          *
          */
-        } else if (numberOfCorrectAnswers <= 3) {
+        } else if (score <= 3) {
             Toast.makeText(this, lose, Toast.LENGTH_LONG).show();
             numberOfCorrectAnswers = 0;
             score = 0;
