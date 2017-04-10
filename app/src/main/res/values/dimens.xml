@@ -2,9 +2,7 @@
 <resources>
     <dimen name="ChooseCarTxt">40sp</dimen>
     <dimen name="EditNameMode">26sp</dimen>
-    <dimen name="EditNameModeLand">20sp</dimen>
     <dimen name="ChooseCarMarginTop">16dp</dimen>
-    <dimen name="ChooseCarLandMarginTop">8dp</dimen>
     <dimen name="LinearLayoutStartMarginTop">8dp</dimen>
     <dimen name="GreenBlueCarPaddingRight">16dp</dimen>
     <dimen name="Radio1StartMarginRight">60dp</dimen>
